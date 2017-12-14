@@ -1,0 +1,29 @@
+#random-number {
+    font-size: 50px;
+}
+.crystal {
+    width:5%;
+}
+
+#red {
+    position: absolute;
+    bottom:100px;
+}
+
+#blue {
+    position:absolute;
+    bottom:100px;
+    left: 100px;
+}
+
+#green {
+    position:absolute;
+    bottom:100px; 
+    left: 200px;
+}
+
+#yellow {
+    position:absolute;
+    bottom:100px;
+    left:300px;
+}
