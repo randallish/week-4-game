@@ -13,23 +13,107 @@ console.log(redCrystal);
 // wins,losses, and score counters
 var wins = 0;
 var losses = 0;
-var totalScore;
+var totalScore = 0;
 
-// assigning variables to DOM elements 
-var displayRandomNumber = $("#random-number");
-var userScore = $("#total-score");
-var userWins = $("#wins");
-var userLosses = $("#losses");
+// display random number 
+$("#random-number").text("Your random number is: " + randomNumber);
 
+// display total score
+$("#total-score").text("Your total score is:" + totalScore);
+
+
+//
+
+
+// resets game
 function resetGame() {
     randomNumber = Math.floor((Math.random() * 120 - 19) + 19);
     redCrystal = Math.floor((Math.random() * 12) + 1);
     blueCrystal = Math.floor((Math.random() * 12) + 1);
     yellowCrystal = Math.floor((Math.random() * 12) + 1);    
     greenCrystal = Math.floor((Math.random() * 12) + 1); 
-    totalScore;   
+    totalScore = 0;   
+    $("#random-number").text("Your random number is: " + randomNumber);
+    $("#total-score").text("Your total score is: " + totalScore);
 };
 
-
+// click event for the red crystal
 $("#red-crystal").on("click",function() {
+    totalScore = redCrystal + totalScore;
+    $("#total-score").text("Your total score is: " + totalScore);
+    console.log(totalScore);
+
+    if (totalScore == randomNumber){
+        wins++;
+        $("#wins").text("Wins: "  + wins);
+        alert("You win!");
+        resetGame();
+    }
+
+    else if (totalScore > randomNumber){
+        losses++;
+        $("#losses").text("Losses: " + losses);
+        alert("You lose!")
+        resetGame();
+    }
+})
+
+//click event for blue crystal 
+$("#blue-crystal").on("click",function() {
+    totalScore = blueCrystal + totalScore;
+    $("#total-score").text("Your total score is: " + totalScore);
+    console.log(totalScore);
+
+    if (totalScore == randomNumber){
+        wins++;
+        $("#wins").text("Wins: " + wins);
+        alert("You win!");
+        resetGame();
+    }
+
+    else if (totalScore > randomNumber){
+        losses++;
+        $("#losses").text("Losses: " + losses);
+        alert("You lose!")
+        resetGame();
+    }
+})
+
+$("#green-crystal").on("click",function() {
+    totalScore = greenCrystal + totalScore;
+    $("#total-score").text("Your total score is: " + totalScore);
+    console.log(totalScore);
+
+    if (totalScore == randomNumber){
+        wins++;
+        $("#wins").text("Wins: " + wins);        
+        alert("You win!");
+        resetGame();
+    }
+
+    else if (totalScore > randomNumber){
+        losses++;
+        alert("You lose!");
+        resetGame();
+    }
+})
+
+$("#yellow-crystal").on("click",function() {
+    totalScore = yellowCrystal + totalScore;
+    $("#total-score").text("Your total score is: " + totalScore);
+    console.log(totalScore);
+
+    if (totalScore == randomNumber){
+        wins++;
+        $("#wins").text("Wins: " + wins);        
+        alert("You win!");
+        resetGame();
+    }
+
+    else if (totalScore > randomNumber){
+        losses++;
+        $("#losses").text("Losses: " + losses);        
+        alert("You lose!");
+        resetGame();
+    }
 })
