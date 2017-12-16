@@ -1,33 +1,100 @@
 #random-number {
-    font-size: 50px;
+    font-size: 30px;
+    width: 20%;
 }
 .crystal {
-    width:5%;
+    width:8%;
 }
 
 #red {
     position: absolute;
-    bottom:100px;
+    bottom:-100px;
+    left: 600px;
 }
 
 #blue {
     position:absolute;
-    bottom:100px;
-    left: 100px;
+    bottom:-100px;
+    left: 725px;
 }
 
 #green {
     position:absolute;
-    bottom:100px; 
-    left: 200px;
+    bottom:-100px; 
+    left: 850px;
 }
 
 #yellow {
     position:absolute;
-    bottom:100px;
-    left:300px;
+    bottom:-100px;
+    left:975px;
 }
 
 #total-score {
-    font-size:50px;
+    font-size:30px;
+    width:23%;
+    margin-top: 50px;
+}
+
+#wins {
+    margin-left: 300px;
+    font-size: 20px;
+    width: 10%;
+    margin-top: -90px;
+    height:60px;
+}
+
+
+#losses{ 
+margin-left: 300px;
+font-size:20px;
+width: 10%;
+top: 200px;
+}
+
+#directions {
+    width: 40%;
+    color: green;
+}
+
+.card-img{
+    width:100%;
+    height: 200px;
+}
+
+
+.indiana {
+    width:10%;
+    position: absolute;
+    top: 220px;
+    left: 800px;
+}
+
+
+body{
+    font-family: 'MedievalSharp', cursive;
+    height: 20px;
+    font-size: 13px;
+}
+
+header{ 
+    position:absolute;
+    left: 525px;
+    top: 200px;
+    font-size: 40px;
+}
+
+h1 {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h3 {
+    margin-left: 650px;
+    margin-top: -75px;
+    font-size: 40px;
 }
