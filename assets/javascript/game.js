@@ -10,6 +10,7 @@ var blueCrystal = Math.floor((Math.random() * 12) + 1);
 var yellowCrystal = Math.floor((Math.random() * 12) + 1);
 var greenCrystal = Math.floor((Math.random() * 12) + 1); 
 console.log(redCrystal,blueCrystal,yellowCrystal,greenCrystal);
+
 // wins,losses, and score counters
 var wins = 0;
 var losses = 0;
@@ -36,7 +37,6 @@ $("#blue-crystal").on("click",function() {
     $("#total-score").text("Your total score is: " + totalScore);
     console.log(totalScore);
     checkWinOrLoss();
-
 })
 
 $("#green-crystal").on("click",function() {
@@ -51,7 +51,6 @@ $("#yellow-crystal").on("click",function() {
     $("#total-score").text("Your total score is: " + totalScore);
     console.log(totalScore);
     checkWinOrLoss();
-
 })
 
 
@@ -61,14 +60,17 @@ function checkWinOrLoss() {
     if (totalScore == randomNumber){
         wins++;
         $("#wins").text("Wins: "  + wins);
-        alert("You win!");
+        $("#win-lose-message").text("You matched the number! You won!");
+        $("#win-lose-message").css("color","blue");
+        $("#win-lose-message").css("font-weight", "bold");
         resetGame();
     }
 
     else if (totalScore > randomNumber){
         losses++;
         $("#losses").text("Losses: " + losses);
-        alert("You lose!")
+        $("#win-lose-message").text("Sorry you lost! Try again");
+        $("#win-lose-message").css("color","red");
         resetGame();
     }
 }
@@ -84,3 +86,4 @@ function resetGame() {
     $("#random-number").text("Your random number is: " + randomNumber);
     $("#total-score").text("Your total score is: " + totalScore);
 }
+
