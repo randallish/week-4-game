@@ -61,7 +61,7 @@ function checkWinOrLoss() {
         wins++;
         $("#wins").text("Wins: "  + wins);
         $("#win-lose-message").text("You matched the number! You won!");
-        $("#win-lose-message").css("color","blue");
+        $("#win-lose-message").css("color","yellow");
         $("#win-lose-message").css("font-weight", "bold");
         resetGame();
     }
@@ -71,6 +71,7 @@ function checkWinOrLoss() {
         $("#losses").text("Losses: " + losses);
         $("#win-lose-message").text("Sorry you lost! Try again");
         $("#win-lose-message").css("color","red");
+        $("#win-lose-message").css("font-weight", "bold");
         resetGame();
     }
 }

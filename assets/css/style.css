@@ -9,32 +9,34 @@
 
 #red {
     position: absolute;
-    bottom:-100px;
+    bottom:0;
     left: 600px;
 }
 
 #blue {
     position:absolute;
-    bottom:-100px;
+    bottom:0;
     left: 725px;
 }
 
 #green {
     position:absolute;
-    bottom:-100px; 
+    bottom:0; 
     left: 850px;
+    width: 9%;
+    height: 95px;
 }
 
-#yellow {
+#orange {
     position:absolute;
-    bottom:-100px;
+    bottom:0;
     left:975px;
 }
 
 #total-score {
     font-size:30px;
     width:23%;
-    margin-top: 50px;
+    margin-top: 75px;
     margin-left: 10px;
 }
 
@@ -47,7 +49,7 @@
 }
 
 
-#losses{ 
+#losses { 
 margin-left: 300px;
 font-size:20px;
 width: 10%;
@@ -58,7 +60,7 @@ top: 200px;
 #win-lose-message{
     position:absolute;
     margin-left: 650px;
-    margin-top: -250px;
+    margin-top: -300px;
     font-size:40px;
     color: blue bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;    
@@ -71,16 +73,25 @@ top: 200px;
 }
 
 .card-img{
-    width:100%;
+    width:60%;
     height: 200px;
+    margin-left: 265px;
 }
 
 
 .indiana {
-    width:12%;
+    width:15%;
     position: absolute;
-    top: 220px;
-    left: 800px;
+    top: -5px;
+    left: 1050px;
+}
+
+.indiana-2 {
+    position:absolute;
+    top:30px;
+    width:15%;
+    margin-left: 25px;
+    height:150px;
 }
 
 
@@ -101,20 +112,20 @@ header{
 }
 
 h1 {
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 15px;
+    margin-top: 0;
     margin-left: 10px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: #ffffff;
+    color:whitesmoke;
 }
 
 h2 {
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 h3 {
     margin-left: 650px;
-    margin-top: -50px;
+    margin-top: -100px;
     font-size: 40px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color:#ffffff;
